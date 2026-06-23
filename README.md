@@ -42,27 +42,27 @@ However, the data highlights a critical operational reality: purely historical m
 
 The current system architecture successfully integrates a decoupled Python backend with a high-performance React.js frontend, featuring deep glassmorphism and fluid physics animations.
 
-### 🐍 Predictive Python Backend (FastAPI)
+### Predictive Python Backend (FastAPI)
 *   **Data Processing:** Processes raw violation CSVs and forecast data into optimized JSON payloads.
 *   **Core Endpoints:** Serves `GET /api/geojson` and `GET /api/rankings` for seamless frontend map consumption.
 *   **Analytics Engine:** Introduces `GET /api/analytics/causal-graph` and `GET /api/analytics/roi` to serve the direct causal link data between illegal parking volume and traffic speed degradation, as well as the Enforcement Return on Investment.
 
-### 🗺️ 3D Digital Twin Interface (Mappls SDK)
+### 3D Digital Twin Interface (Mappls SDK)
 *   **Dynamic Polygons:** Renders customized, extruded 3D polygons reflecting the severity of the CIS score (height and color dynamically mapped to threat level).
 *   **Data Sanitization:** Implements strict error boundaries to sanitize corrupted GPS coordinates (`NaN` handling) before GPU rendering.
 
-### 🚓 Autonomous Tactical Dispatch System
+### Autonomous Tactical Dispatch System
 *   **Headless Geolocation:** Utilizes the Mappls Nearby API to silently scan a 5km radius around a Code Red zone to locate the nearest active response unit.
 *   **Dynamic Routing:** Instantly computes and paints the optimal intercept trajectory on the 3D map using the Mappls Direction API.
 *   **Custom DOM Manipulation:** Replaces default mapping elements with premium, custom-styled HTML badges injected with strict CSS overrides for high visibility.
 *   **Nuclear State Reset:** Features a robust "Stand Down" protocol that sweeps the Mapbox GL GPU layers and aggressively scrubs the browser DOM to reset the tactical board without reloading the application.
 
-### 📊 "Ripple Effect" Analytics Dashboard
+### "Ripple Effect" Analytics Dashboard
 *   **Causal Impact Tracking:** A dedicated Recharts dual-axis dashboard visually proves the problem statement. It tracks the exact "tipping point" where illegal parking volume catastrophically collapses intersection speed (e.g., 15 vehicles causing speed to drop from 40km/h to 12km/h).
 *   **Enforcement R.O.I:** Bar charts quantify the exact hours of traffic delay prevented by different types of police interventions (e.g., Early Tow vs Late Tow).
 *   **Carbon Footprint Reduction:** By identifying the tipping point where intersection speed collapses, the system tracks the secondary impact of gridlock: prolonged vehicle idling. The dashboard quantifies the estimated reduction in CO2 emissions achieved by executing an early tactical tow versus allowing the gridlock to form.
 
-### 💎 Premium UI/UX Polish
+### Premium UI/UX Polish
 *   **Deep Glassmorphism:** The application utilizes heavy backdrop blurs, space-black gradients (`bg-[#0a0f18]`), and ultra-thin borders for a high-end defense grid aesthetic.
 *   **Fluid Animations:** All data cards, charts, and telemetry HUDs are wrapped in `framer-motion`, utilizing spring-based physics to smoothly glide into the viewport.
 *   **Neon Typography:** Features high-contrast neon accents powered by the `JetBrains Mono` font for all metrics and data tables.
