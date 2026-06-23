@@ -1,0 +1,5 @@
+parkguard-ui
+node_modules
+__pycache__
+.git
+.env

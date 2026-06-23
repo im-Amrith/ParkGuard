@@ -1,0 +1,7 @@
+﻿ROUND 1/
+ROUND 2/
+*.zip
+*.csv
+!final_cis_rankings.csv
+!hotspot_forecasts.csv
+node_modules/
